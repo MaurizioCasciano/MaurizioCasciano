@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/web,intellij+all,jetbrains+all
-# Edit at https://www.toptal.com/developers/gitignore?templates=web,intellij+all,jetbrains+all
+# Created by https://www.toptal.com/developers/gitignore/api/web,intellij+all,jetbrains+all,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=web,intellij+all,jetbrains+all,visualstudiocode
 
 ### Intellij+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -144,6 +144,25 @@ fabric.properties
 
 
 
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
 ### Web ###
 *.asp
 *.cer
@@ -159,7 +178,8 @@ fabric.properties
 *.wat
 *.xhtml
 
-# End of https://www.toptal.com/developers/gitignore/api/web,intellij+all,jetbrains+all
+# End of https://www.toptal.com/developers/gitignore/api/web,intellij+all,jetbrains+all,visualstudiocode
 
 # Custom rules
 **/.idea
+**/.vscode

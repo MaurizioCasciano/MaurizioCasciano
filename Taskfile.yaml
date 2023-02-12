@@ -1,0 +1,6 @@
+version: "3"
+
+tasks:
+  workspace:
+    cmds:
+      - npx create-nx-workspace@latest --name="portfolio" --preset=angular-monorepo --appName="dashboard" --style=scss --nxCloud=false

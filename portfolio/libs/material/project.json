@@ -5,6 +5,23 @@
   "sourceRoot": "libs/material/src",
   "prefix": "portfolio",
   "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/material/ng-package.json",
+        "tailwindConfig": "libs/material/tailwind.config.js"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/material/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/material/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],

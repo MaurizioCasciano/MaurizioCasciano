@@ -2,7 +2,9 @@
   "name": "portfolio",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "serve": "nx serve dashboard-app-dashboard"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~15.1.0",

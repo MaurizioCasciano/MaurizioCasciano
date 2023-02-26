@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {SplashComponent} from "@portfolio/material";
+import {PortfolioComponent} from "./portfolio.component";
 
 const routes: Routes = [
   {
     path: "",
-    component: SplashComponent
+    component: PortfolioComponent
   }
 ];
 

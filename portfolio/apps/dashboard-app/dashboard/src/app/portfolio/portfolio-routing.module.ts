@@ -5,7 +5,13 @@ import {PortfolioComponent} from "./portfolio.component";
 const routes: Routes = [
   {
     path: "",
-    component: PortfolioComponent
+    component: PortfolioComponent,
+    children: [
+      {
+        path: "documentation",
+        loadChildren: () => import("../documentation/documentation.module").then((m)=> m.DocumentationModule)
+      }
+    ]
   }
 ];
 
